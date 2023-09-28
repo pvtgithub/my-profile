@@ -1,10 +1,12 @@
+.bg_header{
+    background-color: white;
+}
+
 .image_custom{
     height: fit-content;
     width: fit-content;
-}
-
-.bg_header{
-    background-color: white;
+    max-height: 350px;
+    object-fit: contain;
 }
 
 .icon-btn {

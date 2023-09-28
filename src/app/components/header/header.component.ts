@@ -1,4 +1,6 @@
 import { Component, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProfileUtil } from 'src/app/utils/profile-util';
 
 @Component({
   selector: 'app-header',
@@ -15,5 +17,9 @@ export class HeaderComponent {
       link.setAttribute('download', `avatar.png`);
       link.click();
       link.remove();
+  }
+
+  goPageProfile(url : string){
+    ProfileUtil.goPageProfile(url)
   }
 }

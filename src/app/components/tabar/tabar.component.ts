@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import {  TabDirective } from 'ngx-bootstrap/tabs';
+import { ProfileUtil } from 'src/app/utils/profile-util';
+
+@Component({
+  selector: 'app-tabar',
+  templateUrl: './tabar.component.html',
+  styleUrls: ['./tabar.component.css']
+})
+export class TabarComponent {
+  onSelect(event: TabDirective): void {
+  }
+
+  goPageProfile(url : string){
+    ProfileUtil.goPageProfile(url)
+  }
+}
