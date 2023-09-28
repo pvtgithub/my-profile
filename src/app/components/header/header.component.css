@@ -1,0 +1,28 @@
+.image_custom{
+    height: fit-content;
+    width: fit-content;
+}
+
+.bg_header{
+    background-color: white;
+}
+
+.icon-btn {
+    height: 30px;
+    aspect-ratio: 1/1;
+}
+
+.icon-btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+li + li {
+    margin-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
