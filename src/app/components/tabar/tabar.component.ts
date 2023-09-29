@@ -8,7 +8,9 @@ import { ProfileUtil } from 'src/app/utils/profile-util';
   styleUrls: ['./tabar.component.css']
 })
 export class TabarComponent {
+  isLoadSkill : boolean = false;
   onSelect(event: TabDirective): void {
+   this.isLoadSkill = event.heading == "Skills";
   }
 
   goPageProfile(url : string){

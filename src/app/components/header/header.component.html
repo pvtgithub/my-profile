@@ -4,17 +4,17 @@
             <carousel [isAnimated]="true">
                 <slide>
                     <img class="img-fluid rounded-circle image_custom"
-                        src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/279273579_2032539536956500_8810214943545020750_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=15JSITbvKnMAX8d2wvs&_nc_ht=scontent.fdad1-3.fna&oh=00_AfCr2ch35V3q-gCM2yOsz9DUbajioNeInLp1CPi3fTWqsw&oe=651AA9D1"
+                    src="../../../assets/images/avatar1.png"
                         alt="first slide" style="display: block; width: 100%;">
                 </slide>
                 <slide>
                     <img class="img-fluid rounded-circle image_custom"
-                        src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/277435240_2009695789240875_8683843020133484111_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=1b51e3&_nc_ohc=1123pfRUHkAAX-J1x-U&_nc_ht=scontent.fdad1-3.fna&oh=00_AfBEeLGlLAUnL8LGQqkqWdkyEAHyL5eGN2ZDYgMOQWbN3Q&oe=651B129C"
+                    src="../../../assets/images/avatar2.png"
                         alt="second slide" style="display: block; width: 100%;">
                 </slide>
                 <slide>
                     <img class="img-fluid rounded-circle image_custom"
-                        src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.6435-9/83038045_1366466146897179_7075263904904904704_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=eHFjozLo-o4AX-C4ctv&_nc_ht=scontent.fdad1-3.fna&oh=00_AfD1ALD9KfCrEvqtktgARktbbiCJbzca4GveZ6yN91QxcA&oe=653CE820"
+                    src="../../../assets/images/avatar3.png"
                         alt="third slide" style="display: block; width: 100%;">
                 </slide>
             </carousel>
@@ -24,30 +24,30 @@
         </div>
     </div>
     <div class="col-md-8">
-        <div class="p-4">
-            <h1 class="text-primary">Hello <span class="fs-3 text-secondary">Welcome to my profile</span></h1>
-            <div>
-                <p>Name: <span>Phan Van Tho</span></p><br>
-                <p>Phone: <span><a tel:0348485360>0348485360</a></span></p><br>
-                <p>Address: <span>Nghia Lam - Tu Nghia - Quang Ngai</span></p><br>
-                <p>Company: <span>Luvina</span></p><br>
+        <div class="p-4 " [@fadeInOut]="animationState">
+            <h1 class="custom_hello" >Hello <span class="fs-3 text-secondary">Welcome to my profile</span></h1>
+            <div class="align-items-center">
+                <p class="text-secondary mt-4">Name: <span class="fs-5 p-2 fw-bold">Phan Van Tho</span></p>
+                <p class="text-secondary mt-4">Phone: <span class="fs-5 p-2 fw-bold"><a href="tel:0348485360">0348485360</a></span></p>
+                <p class="text-secondary mt-4">Address: <span class="fs-5 p-2 fw-bold">Nghia Lam - Tu Nghia - Quang Ngai</span></p>
+                <p class="text-secondary mt-4">Company: <span class="fs-5 p-2 fw-bold">Luvina Software JSC</span></p>
             </div>
-            <div>
+            <div class="mt-5">
                 <ul>
                     <li (click)="goPageProfile('https://www.facebook.com/nhoktho.goodly/')"><img class="icon-btn"
-                            src="https://vi.wizcase.com/wp-content/uploads/2022/05/Facebook-Logo.png"></li>
+                            src="../../../assets/images/facebook-icon.png"></li>
                     <li (click)="goPageProfile('https://www.tiktok.com/@pvt1007')"><img class="icon-btn"
-                            src="https://p16-tiktokcdn-com.akamaized.net/obj/tiktok-obj/8a4d7b290d61cdb1e3264d379dc857cb">
+                            src="../../../assets/images/tiktok-icon.png">
                     </li>
                     <li (click)="goPageProfile('https://www.instagram.com/trextraux/')"><img class="icon-btn"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png">
+                            src="../../../assets/images/Intagram-icon.png">
                     </li>
                     <li (click)="goPageProfile('https://www.youtube.com/channel/UCU6vUJ-Q0vNeSteaNqS9Tbw')"><img
                             class="icon-btn"
-                            src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc">
+                            src="../../../assets/images/youtube-icon.png">
                     </li>
                     <li (click)="goPageProfile('mailto:tenemail@gmail.com')"><img class="icon-btn"
-                            src="https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI">
+                            src="../../../assets/images/email-icon.png">
                     </li>
                 </ul>
             </div>

@@ -10,28 +10,142 @@
             <div class="d-flex align-items-center">
                 <i-bs class="p-2" name="book-half" width="25" height="25">
                 </i-bs>
-                <span class="p-3">Studied at <a class="text-primary"
-                        (click)="goPageProfile('https://dau.edu.vn/')">Da Nang Architecture University</a></span>
+                <span class="p-3">Studied at <a class="text-primary" (click)="goPageProfile('https://dau.edu.vn/')">Da
+                        Nang Architecture University</a></span>
             </div>
             <div class="d-flex align-items-center">
                 <i-bs class="p-2" name="cone-striped" width="25" height="25">
                 </i-bs>
                 <span class="p-3">Living in <a class="text-primary"
-                        (click)="goPageProfile('https://www.google.com/maps/place/H%E1%BA%A3i+Ch%C3%A2u,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vi%E1%BB%87t+Nam/@16.0601911,108.1706811,13z/data=!3m1!4b1!4m6!3m5!1s0x314219b5c59ecec1:0xfd2900156004319!8m2!3d16.0472002!4d108.2199588!16s%2Fm%2F03mbk01?hl=vi-VN&entry=ttu')">Da Nang</a></span>
+                        (click)="goPageProfile('https://www.google.com/maps/place/H%E1%BA%A3i+Ch%C3%A2u,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vi%E1%BB%87t+Nam/@16.0601911,108.1706811,13z/data=!3m1!4b1!4m6!3m5!1s0x314219b5c59ecec1:0xfd2900156004319!8m2!3d16.0472002!4d108.2199588!16s%2Fm%2F03mbk01?hl=vi-VN&entry=ttu')">Da
+                        Nang</a></span>
             </div>
-            
+
             <div class="d-flex align-items-center">
                 <i-bs class="p-2" name="house-door-fill" width="25" height="25">
                 </i-bs>
                 <span class="p-3">From <a class="text-primary"
-                        (click)="goPageProfile('https://www.google.com/maps/place/Ngh%C4%A9a+L%C3%A2m,+T%C6%B0+Ngh%C4%A9a,+Qu%E1%BA%A3ng+Ng%C3%A3i/@15.141249,108.637571,14z/data=!3m1!4b1!4m6!3m5!1s0x3169af96e2a9b089:0x5f34ceb425c8e2ff!8m2!3d15.1442329!4d108.6353764!16s%2Fg%2F11cr_s6rn_?entry=ttu')">Quang Ngai</a></span>
+                        (click)="goPageProfile('https://www.google.com/maps/place/Ngh%C4%A9a+L%C3%A2m,+T%C6%B0+Ngh%C4%A9a,+Qu%E1%BA%A3ng+Ng%C3%A3i/@15.141249,108.637571,14z/data=!3m1!4b1!4m6!3m5!1s0x3169af96e2a9b089:0x5f34ceb425c8e2ff!8m2!3d15.1442329!4d108.6353764!16s%2Fg%2F11cr_s6rn_?entry=ttu')">Quang
+                        Ngai</a></span>
             </div>
         </tab>
         <tab heading="Skills" class="mt-2" (selectTab)="onSelect($event)">
-            <h4>Title 2</h4>
-            <p>It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s with the release of
-                Letraset sheets containing Lorem Ipsum passages</p>
+            <div class="row" *ngIf="isLoadSkill">
+                <div class="col-6">
+                    <div class="row">
+                        <h4 class="text-center">Processional Skill</h4>
+                        <div class="col-6 text-center">
+                            <h6 class="text-secondary">
+                                Programming Languages</h6>
+                            <circle-progress [percent]="87" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="JAVA"></circle-progress>
+
+                                <circle-progress [percent]="80" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="PHP"></circle-progress>
+
+                                <circle-progress [percent]="70" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="TYPESCRIPT"></circle-progress>
+                                
+                                <circle-progress [percent]="10" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="C#"></circle-progress>
+
+                                <circle-progress [percent]="30" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="PYTHON"></circle-progress>
+                                
+                                <circle-progress [percent]="30" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="C"></circle-progress>
+                                
+                                <circle-progress [percent]="35" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="C++"></circle-progress>
+
+                                <circle-progress [percent]="67" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="JAVASCRIPT"></circle-progress>
+
+                                <circle-progress [percent]="70" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'"
+                                [animation]="true" [animationDuration]="300" subtitle="HTML&CSS"></circle-progress>
+                                
+                                
+                        </div>
+                        <div class="col-6 text-center">
+                            <h6 class="text-secondary">Frameworks</h6>
+                            <circle-progress [percent]="85" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#FDB900'" [innerStrokeColor]="'#ffff33'"
+                                [animation]="true" [animationDuration]="300" subtitle="SPRING BOOT"></circle-progress>
+                                <circle-progress [percent]="75" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#FDB900'" [innerStrokeColor]="'#ffff33'"
+                                [animation]="true" [animationDuration]="300" subtitle="LARAVEL"></circle-progress>
+                                <circle-progress [percent]="10" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#FDB900'" [innerStrokeColor]="'#ffff33'"
+                                [animation]="true" [animationDuration]="300" subtitle="ASP.NET"></circle-progress>
+                                <circle-progress [percent]="85" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#FDB900'" [innerStrokeColor]="'#ffff33'"
+                                [animation]="true" [animationDuration]="300" subtitle="ANGULAR"></circle-progress>
+                                <circle-progress [percent]="71" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#FDB900'" [innerStrokeColor]="'#ffff33'"
+                                [animation]="true" [animationDuration]="300" subtitle="REACTJS"></circle-progress>
+                                <circle-progress [percent]="29" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#FDB900'" [innerStrokeColor]="'#ffff33'"
+                                [animation]="true" [animationDuration]="300" subtitle="VUEJS"></circle-progress>
+                                <circle-progress [percent]="79" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#FDB900'" [innerStrokeColor]="'#ffff33'"
+                                [animation]="true" [animationDuration]="300" subtitle="BOOTSTRAP"></circle-progress>
+                                <circle-progress [percent]="38" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#FDB900'" [innerStrokeColor]="'#ffff33'"
+                                [animation]="true" [animationDuration]="300" subtitle="MATERIAL UI"></circle-progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <h4 class="text-center">Other Skill</h4>
+                        <div class="col-6 text-center">
+                            <h6 class="text-secondary">Foreign Languages</h6>
+                            <circle-progress [percent]="45" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#00b8e6'" [innerStrokeColor]="'#b3f0ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="ENGLISH"></circle-progress>
+                                <circle-progress [percent]="1" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#00b8e6'" [innerStrokeColor]="'#b3f0ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="JAPANESE"></circle-progress>
+                                <circle-progress [percent]="1" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#00b8e6'" [innerStrokeColor]="'#b3f0ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="CHINESE"></circle-progress>
+                                <circle-progress [percent]="99" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#00b8e6'" [innerStrokeColor]="'#b3f0ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="VIETNAMESE"></circle-progress>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h6 class="text-secondary">Soft Skills</h6>
+                            <circle-progress [percent]="90" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#7300e6'" [innerStrokeColor]="'#d9b3ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="SINGING"></circle-progress>
+                                <circle-progress [percent]="11" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#7300e6'" [innerStrokeColor]="'#d9b3ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="ART"></circle-progress>
+                                <circle-progress [percent]="33" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#7300e6'" [innerStrokeColor]="'#d9b3ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="SPORT"></circle-progress>
+                                <circle-progress [percent]="85" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#7300e6'" [innerStrokeColor]="'#d9b3ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="E-SPORT"></circle-progress>
+                                <circle-progress [percent]="69" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#7300e6'" [innerStrokeColor]="'#d9b3ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="Communication"></circle-progress>
+                                <circle-progress [percent]="87" [radius]="70" [outerStrokeWidth]="13"
+                                [innerStrokeWidth]="8" [outerStrokeColor]="'#7300e6'" [innerStrokeColor]="'#d9b3ff'"
+                                [animation]="true" [animationDuration]="300" subtitle="Problem-solving"></circle-progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </tab>
     </tabset>
 </div>

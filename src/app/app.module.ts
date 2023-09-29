@@ -11,6 +11,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { TabarComponent } from './components/tabar/tabar.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
     CarouselModule.forRoot(),
     BrowserAnimationsModule,
     TabsModule,
-    NgxBootstrapIconsModule.pick(allIcons)
+    NgxBootstrapIconsModule.pick(allIcons),
+    NgCircleProgressModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

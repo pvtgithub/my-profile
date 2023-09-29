@@ -1,7 +1,12 @@
 .bg_header{
     background-color: white;
 }
+.custom_hello{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 67px;
+    color: rgb(23, 167, 119);
 
+}
 .image_custom{
     height: fit-content;
     width: fit-content;
