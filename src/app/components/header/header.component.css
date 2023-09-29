@@ -10,7 +10,8 @@
 .image_custom{
     height: fit-content;
     width: fit-content;
-    max-height: 350px;
+    max-height: 40vh;
+    min-height: 40vh;
     object-fit: contain;
 }
 
