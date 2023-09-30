@@ -7,7 +7,10 @@
             <app-skill [isLoadSkill]="isLoadSkill"></app-skill>
         </tab>
         <tab heading="Hobbies" class="mt-2" (selectTab)="onSelect($event)">
-            <app-hobbie></app-hobbie>
+            <app-hobbie [isLoadHobbie]="isLoadHobbie"></app-hobbie>
+        </tab>
+        <tab heading="Certification" class="mt-2" (selectTab)="onSelect($event)">
+            <app-certification></app-certification>
         </tab>
     </tabset>
 </div>

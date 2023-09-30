@@ -1,6 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, Renderer2 } from '@angular/core';
-import { Router } from '@angular/router';
 import { ProfileUtil } from 'src/app/utils/profile-util';
 
 @Component({
@@ -31,8 +30,8 @@ export class HeaderComponent {
 
   clickDownloadCv(){
     const link = this.render.createElement('a');
-      link.setAttribute('href', '../../../assets/images/');
-      link.setAttribute('download', `avatar.png`);
+      link.setAttribute('href', 'assets/images/');
+      link.setAttribute('download', `avatar1.png`);
       link.click();
       link.remove();
   }

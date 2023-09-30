@@ -9,9 +9,11 @@ import { ProfileUtil } from 'src/app/utils/profile-util';
 })
 export class TabarComponent {
   isLoadSkill : boolean = false;
+  isLoadHobbie : boolean = false;
 
   onSelect(event: TabDirective): void {
    this.isLoadSkill = event.heading == "Skills";
+   this.isLoadHobbie = event.heading == "Hobbies";
   }
 
 }

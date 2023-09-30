@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProgressbarType } from 'ngx-bootstrap/progressbar';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-hobbie',
@@ -7,10 +8,12 @@ import { ProgressbarType } from 'ngx-bootstrap/progressbar';
   styleUrls: ['./hobbie.component.css']
 })
 export class HobbieComponent {
-   typePro : ProgressbarType = 'danger'
+  typePro: ProgressbarType = 'danger'
+  @Input() isLoadHobbie!: boolean
+
   objHobbie = [
     { title: "Listen to music", value: 88, type: this.typePro },
-    { title: "Play game", value: 70, type: this.typePro},
+    { title: "Play game", value: 70, type: this.typePro },
     { title: "Reading book", value: 15, type: this.typePro },
     { title: "Program", value: 90, type: this.typePro },
     { title: "Travel", value: 99, type: this.typePro },
@@ -38,17 +41,39 @@ export class HobbieComponent {
 
   getHobbie() {
     this.objHobbie.forEach(element => {
-      if(element.value <= 30){
-        const a : ProgressbarType = 'danger'
+      if (element.value <= 30) {
+        const a: ProgressbarType = 'danger'
         element.type = a
-      }else if(element.value <= 80){
-        const a : ProgressbarType = 'warning'
+      } else if (element.value <= 80) {
+        const a: ProgressbarType = 'warning'
         element.type = a
-      }else {
-        const a : ProgressbarType = 'success'
+      } else {
+        const a: ProgressbarType = 'success'
         element.type = a
       }
     });
+  }
+
+  ngOnChanges() {
+    this.setIntevalProgressBar()
+  }
+
+  setIntevalProgressBar(){
+    if (this.isLoadHobbie) {
+      this.objHobbie.forEach(element => {
+        const valueE = element.value
+        let start = 0;
+        element.value = start
+        const interval = setInterval(() => {
+          if (start < valueE) {
+            start += 1;
+            element.value = start
+          } else {
+            clearInterval(interval);
+          }
+        },20)
+      });
+    }
   }
 }
 
