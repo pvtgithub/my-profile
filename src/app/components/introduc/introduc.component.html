@@ -13,15 +13,69 @@
 <div class="d-flex align-items-center">
     <i-bs class="p-2" name="cone-striped" width="25" height="25">
     </i-bs>
-    <span class="p-3">Living in <a class="text-primary"
-            (click)="goPageProfile('https://www.google.com/maps/place/H%E1%BA%A3i+Ch%C3%A2u,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vi%E1%BB%87t+Nam/@16.0601911,108.1706811,13z/data=!3m1!4b1!4m6!3m5!1s0x314219b5c59ecec1:0xfd2900156004319!8m2!3d16.0472002!4d108.2199588!16s%2Fm%2F03mbk01?hl=vi-VN&entry=ttu')">Da
-            Nang</a></span>
+    <span class="p-3">Living in
+        <button class="btn btn-link" (click)="livingModal.show()" tooltip="View detail, Click here!!!"
+            style="text-decoration: none;">Da Nang
+        </button>
+    </span>
 </div>
 
 <div class="d-flex align-items-center">
     <i-bs class="p-2" name="house-door-fill" width="25" height="25">
     </i-bs>
-    <span class="p-3">From <a class="text-primary"
-            (click)="goPageProfile('https://www.google.com/maps/place/Ngh%C4%A9a+L%C3%A2m,+T%C6%B0+Ngh%C4%A9a,+Qu%E1%BA%A3ng+Ng%C3%A3i/@15.141249,108.637571,14z/data=!3m1!4b1!4m6!3m5!1s0x3169af96e2a9b089:0x5f34ceb425c8e2ff!8m2!3d15.1442329!4d108.6353764!16s%2Fg%2F11cr_s6rn_?entry=ttu')">Quang
-            Ngai</a></span>
+    <span class="p-3">From
+        <button class="btn btn-link" (click)="fromModal.show()" tooltip="View detail, Click here!!!"
+            style="text-decoration: none;">Quang Ngai
+        </button>
+    </span>
+
+
+    <div bsModal #fromModal="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+        aria-labelledby="dialog-sizes-name1">
+        <div class="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="dialog-sizes-name1" class="modal-title pull-left">My House </h5>
+                    <button type="button" class="btn-close close pull-right" (click)="fromModal.hide()"
+                        aria-label="Close">
+                        <span aria-hidden="true" class="visually-hidden">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30810.483074793774!2d108.61697140173032!3d15.141289492418496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3169af96e2a9b089%3A0x5f34ceb425c8e2ff!2zTmdoxKlhIEzDom0sIFTGsCBOZ2jEqWEsIFF14bqjbmcgTmfDo2ksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1696065284447!5m2!1svi!2s"
+                        style="border: 1px solid grey; width: 100%; height: 70vh;" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div bsModal #livingModal="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+        aria-labelledby="dialog-sizes-name1">
+        <div class="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="dialog-sizes-name1" class="modal-title pull-left">My living </h5>
+                    <button type="button" class="btn-close close pull-right" (click)="livingModal.hide()"
+                        aria-label="Close">
+                        <span aria-hidden="true" class="visually-hidden">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61345.91366100793!2d108.17084379005864!3d16.05928209570532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219b6f66cbec5%3A0xbc0f57b1afe192de!2zSOG6o2kgQ2jDonUsIMSQw6AgTuG6tW5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1696066166704!5m2!1svi!2s"
+                        style="border: 1px solid grey; width: 100%; height: 70vh;" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
