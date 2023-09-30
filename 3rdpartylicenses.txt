@@ -102,13 +102,28 @@ MIT
 ngx-bootstrap/carousel
 MIT
 
+ngx-bootstrap/component-loader
+MIT
+
 ngx-bootstrap/datepicker
+MIT
+
+ngx-bootstrap/focus-trap
+MIT
+
+ngx-bootstrap/modal
+MIT
+
+ngx-bootstrap/positioning
 MIT
 
 ngx-bootstrap/progressbar
 MIT
 
 ngx-bootstrap/tabs
+MIT
+
+ngx-bootstrap/tooltip
 MIT
 
 ngx-bootstrap/utils
