@@ -35,24 +35,6 @@ export class HobbieComponent {
     { title: "Watch TV", value: 66, type: this.typePro },
   ]
 
-  ngOnInit() {
-    this.getHobbie()
-  }
-
-  getHobbie() {
-    this.objHobbie.forEach(element => {
-      if (element.value <= 30) {
-        const a: ProgressbarType = 'danger'
-        element.type = a
-      } else if (element.value <= 80) {
-        const a: ProgressbarType = 'warning'
-        element.type = a
-      } else {
-        const a: ProgressbarType = 'success'
-        element.type = a
-      }
-    });
-  }
 
   ngOnChanges() {
     this.setIntevalProgressBar()
@@ -68,6 +50,17 @@ export class HobbieComponent {
           if (start < valueE) {
             start += 1;
             element.value = start
+            
+            if (element.value <= 30) {
+              const a: ProgressbarType = 'danger'
+              element.type = a
+            } else if (element.value <= 80) {
+              const a: ProgressbarType = 'warning'
+              element.type = a
+            } else {
+              const a: ProgressbarType = 'success'
+              element.type = a
+            }
           } else {
             clearInterval(interval);
           }

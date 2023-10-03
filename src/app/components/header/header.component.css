@@ -8,10 +8,8 @@
 
 }
 .image_custom{
-    height: fit-content;
-    width: fit-content;
-    max-height: 40vh;
-    min-height: 40vh;
+    max-height: 390px;
+    min-height: 390px;
     object-fit: contain;
 }
 
