@@ -31,7 +31,6 @@ export class HobbieComponent {
     { title: "Dance", value: 1, type: this.typePro },
     { title: "Football", value: 65, type: this.typePro },
     { title: "Seafood", value: 95, type: this.typePro },
-    { title: "Monney", value: 99, type: this.typePro },
     { title: "Watch TV", value: 66, type: this.typePro },
   ]
 
